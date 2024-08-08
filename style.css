@@ -36,9 +36,8 @@ h2 {
 
 header {
   width: 100%;
-  height: 60px;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(308deg, rgba(0, 0, 0, 0.7959558823529411) 37%, rgba(255, 176, 5, 1) 37%);
+  height: 70px;
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,10 +48,10 @@ header {
 }
 
 #logo {
-  width: max(250px, 19vw);
-  margin-left: -40px;
-  margin-top: 20px;
-  filter: saturate(0);
+  width: max(130px, 10vw);
+  margin-left: 10px;
+  margin-top: 0px;
+  
 }
 
 /*h1 {
@@ -81,19 +80,21 @@ nav {
   min-height: 20%;
   margin: auto;
   font-weight: bold;
-  padding-top: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   position: relative;
+
 }
 
 .blur-background {
   width: 100%;
   height: 100%;
-  background: url('bag.jpg');
+  background: url('bag2.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  filter: blur(7.9px) contrast(2px);
-  -webkit-filter: blur(9.9px);
+  filter: blur(2.9px) contrast(2px);
+  -webkit-filter: blur(2.9px);
   position: absolute;
   z-index: -1;
 
@@ -149,7 +150,7 @@ main section:hover {
 footer,
 p {
   text-align: center;
-  padding: 0.3em;
+  padding: 0.2em;
   font-weight: bold;
 }
 
