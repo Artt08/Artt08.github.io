@@ -78,14 +78,13 @@ nav {
   position: relative;
 }
 
-.blur-background {
+.company-banner {
   width: 100vw;
   height: 50vh;
   background: url('bag2.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  filter: blur(2.9px);
   position: absolute;
   z-index: -1;
 }
