@@ -17,7 +17,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: black;
+  background: white;
   background-repeat: no-repeat;
   background-position: centre;
   background-size: cover;
@@ -37,7 +37,7 @@ h2 {
 header {
   width: 100%;
   height: 10vh;
-  background: rgba(66, 55, 0, 0.7);
+  background: rgb(130, 29, 116, 0.7);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   display: flex;
@@ -51,8 +51,9 @@ header {
 }
 
 #logo {
-  width: max(130px, 10vw);
-  margin-left: 10px;
+  height: max(10vh, 150px);
+  width: max(220px, 10vw);
+  margin-left: -5px;
   margin-top: 0px;
   
 }
@@ -90,14 +91,14 @@ nav {
 }
 
 .blur-background {
-  width: 100%;
+  width: 100vw;
   height: 50vh;
   background: url('bag2.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   filter: blur(2.9px) contrast(2px);
-  -webkit-filter: blur(2.9px);
+  
   position: absolute;
   z-index: -1;
 
@@ -108,22 +109,10 @@ nav ul {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 80px 30px 80px auto;
+  margin: 10px 30px 80px auto;
    font-size: min(5vw, 1.5em);
 }
 
-nav li {
-  margin-bottom: 10px;
-  padding: 20px 0;
-}
-
-nav a {
-  color: antiquewhite;
-}
-
-nav a:hover {
-  color: goldenrod;
-}
 
 /* Main Content Styles */
 main {
@@ -135,7 +124,7 @@ main {
 main section {
   padding: 40px 0;
   text-align: center;
-  color: antiquewhite;
+  color: #383347;
   margin:20px auto 40px auto;
    font-size: min(5vw, 1.5em);
 }
@@ -151,7 +140,7 @@ main section:hover {
 .bag-img {
   width: 100%;
   height: 100%;
-  background: url('bag1.png');
+  background: url('bag.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -167,30 +156,66 @@ main section:hover {
   align-items: center;
   justify-content: center;
   margin: auto;
-  width: 80%;
-  padding: 20px;
-  border: 1px solid rgb(250, 235, 215);
-  background-color: rgb(84, 84, 84, 0.3)
+  width: 100%;
+  padding: 0px;
+  background-color: rgb(255, 255, 255, 0.3)
 }
 
-.faq .divider {
-  width: 100%;
-  height: 1px;
-  background-color: #ccc;
-  margin: 20px 0;
+.faq-container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-title {
+    font-size: 18px;
+    padding: 15px;
+    background: rgb(139, 29, 116) ;
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.3s;
+}
+
+.faq-title:hover {
+    background: rgb(120, 29, 116); ;
+}
+
+.faq-content {
+    
+    
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    padding: 0 15px;
   }
+
 
 footer,
 p {
   text-align: center;
   padding: 0.1em;
   font-weight: bold;
-  color: rgb(273, 187, 45);
+  color: black;
 }
 
 /* Footer Styles */
 footer {
-  background: rgba(66, 55, 0, 0.4);
+  background: rgb(130, 29, 116, 1);  
   border-top: 1px solid rgb(273, 187, 45);
   justify-content: center;
   margin-top: auto;
