@@ -123,6 +123,80 @@ main section {
   font-size: 1rem;
 }
 
+/* Portfolio Gallery Styles */
+.portfolio-gallery {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-gallery h2 {
+  margin-bottom: 10px;
+  color: rgb(139, 29, 116);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.project-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  aspect-ratio: 16/9;
+}
+
+.project-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(139, 29, 116, 0.85);
+  color: white;
+  padding: 15px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.project-overlay h3 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+}
+
+.project-overlay p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.project-item:hover .project-overlay {
+  transform: translateY(0);
+}
+
+.project-item:hover img {
+  transform: scale(1.1);
+}
+
 .headline {
   margin-bottom: 30px;
 }
@@ -371,6 +445,15 @@ footer {
   
   .company-banner {
     height: 200px;
+  }
+  
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .portfolio-gallery {
+    padding: 15px;
   }
   
   h1 {

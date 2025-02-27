@@ -1,5 +1,18 @@
 
 document.addEventListener("DOMContentLoaded", () => {
+    // Portfolio items hover effect enhancement
+    const projectItems = document.querySelectorAll(".project-item");
+    
+    projectItems.forEach(item => {
+        item.addEventListener("mouseenter", function() {
+            this.querySelector(".project-overlay").style.transform = "translateY(0)";
+        });
+        
+        item.addEventListener("mouseleave", function() {
+            this.querySelector(".project-overlay").style.transform = "translateY(100%)";
+        });
+    });
+    
     const faqTitles = document.querySelectorAll(".faq-title");
     
     faqTitles.forEach(title => {
