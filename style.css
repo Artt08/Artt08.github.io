@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 @media (prefers-reduced-motion: no-preference) {
   * {
@@ -11,33 +10,32 @@
 /* Global Styles */
 * {
   font-family: "Exo 2", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
 body {
-  font-family: Arial, sans-serif;
   background: white;
   background-repeat: no-repeat;
-  background-position: centre;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  margin: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-
 h2 {
   font-weight: normal;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 header {
   width: 100%;
   height: 10vh;
-  background: rgb(130, 29, 116, 0.7);
+  background: rgba(130, 29, 116, 0.7);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   display: flex;
@@ -54,16 +52,7 @@ header {
   height: max(10vh, 150px);
   width: max(220px, 10vw);
   margin-left: -5px;
-  margin-top: 0px;
-  
 }
-
-/*h1 {
-  color: antiquewhite;
-  font-size: min(5vw, 1.5em);
-  margin-right: 10px;
-}
-*/
 
 p {
   margin-bottom: 20px;
@@ -87,7 +76,6 @@ nav {
   padding-top: 10vh;
   padding-bottom: 11vh;
   position: relative;
-
 }
 
 .blur-background {
@@ -97,11 +85,9 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  filter: blur(2.9px) contrast(2px);
-  
+  filter: blur(2.9px);
   position: absolute;
   z-index: -1;
-
 }
 
 nav ul {
@@ -110,31 +96,25 @@ nav ul {
   align-items: center;
   flex-direction: column;
   margin: 10px 30px 80px auto;
-   font-size: min(5vw, 1.5em);
+  font-size: min(5vw, 1.5em);
 }
-
 
 /* Main Content Styles */
 main {
-  padding: 50px 20px 50px 20px;
+  padding: 50px 20px;
   height: auto;
- 
 }
 
 main section {
   padding: 40px 0;
   text-align: center;
   color: #383347;
-  margin:20px auto 40px auto;
-   font-size: min(5vw, 1.5em);
+  margin: 20px auto 40px auto;
+  font-size: min(5vw, 1.5em);
 }
 
 main section:first-child {
   margin-top: 20%;
-}
-
-main section:hover {
-  -webkit-text-fill-color: ;
 }
 
 .bag-img {
@@ -144,8 +124,7 @@ main section:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  filter: blur(3.9px) contrast(30px);
-  -webkit-filter: blur(3.9px);
+  filter: blur(3.9px);
   position: absolute;
   z-index: -1;
 }
@@ -157,56 +136,48 @@ main section:hover {
   justify-content: center;
   margin: auto;
   width: 100%;
-  padding: 0px;
-  background-color: rgb(255, 255, 255, 0.3)
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .faq-container {
-    max-width: 700px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    text-align: center;
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .faq-item {
-    border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .faq-title {
-    font-size: 18px;
-    padding: 15px;
-    background: rgb(139, 29, 116) ;
-    color: white;
-    cursor: pointer;
-    border: none;
-    width: 100%;
-    text-align: left;
-    outline: none;
-    transition: 0.3s;
+  font-size: 18px;
+  padding: 15px;
+  background: rgb(139, 29, 116);
+  color: white;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  transition: 0.3s;
 }
 
 .faq-title:hover {
-    background: rgb(120, 29, 116); ;
+  background: rgb(120, 29, 116);
 }
 
 .faq-content {
-    
-    
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-    padding: 0 15px;
-  }
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  padding: 0 15px;
+}
 
-
-footer,
-p {
+footer, footer p {
   text-align: center;
   padding: 0.1em;
   font-weight: bold;
@@ -215,7 +186,7 @@ p {
 
 /* Footer Styles */
 footer {
-  background: rgb(130, 29, 116, 1);  
+  background: rgb(130, 29, 116);
   border-top: 1px solid rgb(273, 187, 45);
   justify-content: center;
   margin-top: auto;
